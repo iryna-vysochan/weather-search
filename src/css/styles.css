@@ -1,18 +1,71 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+/* Form */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.form-input {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  border-color: #4facfe;
+}
+
+.form-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4facfe;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-btn:hover {
+  background-color: #00f2fe;
+}
+
+/* Weather container */
+.weather {
+  text-align: center;
+}
+
+.weather h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.weather p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-input, .form-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .weather h2 {
+    font-size: 20px;
+  }
+
+  .weather p {
+    font-size: 16px;
+  }
+}
