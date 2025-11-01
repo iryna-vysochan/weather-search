@@ -6,7 +6,7 @@ export default async function getWeatherByCity(city) {
     const url = `https://api.openweathermap.org/data/2.5/weather`;
     const params = {
         q: city,
-        appid: API_KEY,
+        appid: apiKey,
         units: 'metric',  
         lang: 'ua'         
     };
