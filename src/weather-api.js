@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
+const apiKey = "d7026dd72f31410938d8c5c013b35c33";
 
 export default async function getWeatherByCity(city) {
     const url = `https://api.openweathermap.org/data/2.5/weather`;
